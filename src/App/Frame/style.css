@@ -1,0 +1,543 @@
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  background: #40b7c8 url(~Assets/bg-page.gif) 0 0 repeat-x;
+  font-size: 11px;
+  font-family: arial, helvetica, sans serif;
+  color: #333;
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
+}
+
+p {
+  margin-top: 10px;
+}
+
+h1 {
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  color: #000;
+  font-weight: normal;
+  margin: 0 0 15px;
+}
+
+th, td, div {
+  font-size: 12px;
+  text-align: left;
+}
+
+div.content {
+  width: 968px;
+  padding: 20px 0 20px 20px;
+  background: #fff;
+  border: 1px solid #fff;
+}
+
+img	{
+  border: 0;
+}
+
+a {
+  color: #4c75a5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#page-wrapper	{
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#container {
+  position: absolute;
+  width: 400px;
+  height: 250px;
+  left: 50%;
+  top: 50%;
+  margin-top: -200px;
+  margin-left: -200px;
+}
+
+#container table td {
+  padding-bottom: 5px;
+  padding-right: 5px;
+}
+
+#gridControls table {
+  border-collapse: collapse;
+  border: 0;
+  margin-top: 10px;
+
+}
+#gridControls td {
+  font-size: 10px;
+  padding: 0;
+  padding-right: 3px;
+}
+
+li {
+  line-height: 15px;
+}
+
+.project-flash {
+  color: #333333;
+  float: right;
+  padding: 10px 0 11px 0;
+  background-color: #ffffff;
+  border-radius: 0 0 5px 5px;
+  margin: 0 10px 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.project-flash div {
+  margin: 0 15px;
+  font-size: 1.2em;
+}
+
+#hormenu {
+  height: 92px;
+  color: #FFFFFF;
+  width: 1000px;
+}
+
+#hormenu h1	{
+  font-family: georgia;
+  height: 45px;
+  margin: 0;
+  padding-top: 17px;
+  color : #fff;
+  font-weight: normal;
+}
+
+#hormenu ul {
+  list-style: none;
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+
+#hormenu ul li {
+  list-style: none;
+  float: left;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+#hormenu ul li a {
+  display: block;
+  color: #333;
+  font-size: 14px;
+  padding: 7px 12px 7px;
+  border: 1px solid #343434;
+  border-bottom: 0;
+  background: #d9d9d9 url(~Assets/bg-nav.gif) 0 0 repeat-x;
+}
+
+#hormenu ul li a:hover, #hormenu ul li a.active, #hormenu ul li:hover a{
+  background: #FFF;
+  border: 1px solid #fff;
+  border-bottom: 0;
+  color: #111;
+}
+
+.page-footer {
+  float: left;
+  margin: 5px 0;
+  width: 600px;
+}
+
+.contextMenu {
+  position: absolute;
+  border: 1px solid #dedede;
+  background-color: #ffffff;
+  padding: 5px;
+  text-align: left;
+}
+
+.contextMenu a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contextMenu a:hover {
+  text-decoration: underline;
+}
+
+.links .btn-pod-lft	{
+  float: right;
+  width: 12px;
+  height: 25px;
+  background: url(~Assets/sprites.png) 0 -17px no-repeat;
+}
+
+.links .btn-pod-rgt	{
+  float: right;
+  width: 12px;
+  height: 25px;
+  background: url(~Assets/sprites.png) -24px -17px no-repeat;
+}
+
+.links .btn-pod	{
+  float: right;
+  height: 23px;
+  padding: 1px 0;
+  background: url(~Assets/sprites.png) 0 -42px no-repeat;
+}
+
+.links a {
+  display: block;
+  float: left;
+  height: 10px;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 11px;
+  text-shadow: 0 1px 0 #fff;
+  display: inline-block;
+  text-indent: -999px;
+  background: url(~Assets/sprites.png) 100% -18px no-repeat;
+}
+
+.links .a-edit {
+  padding: 6px 11px 5px 4px;
+  text-indent: 0;
+}
+
+.links .a-del	{
+  width: 17px;
+  height: 23px;
+  padding: 0;
+  margin: 0;
+  text-indent: -999em;
+  background: url(~Assets/sprites.png) -93px -18px no-repeat;
+}
+
+.btn {
+  height: 18px;
+  border: 1px solid #cdcdcd;
+  padding: 7px 8px 0 25px;
+  line-height: 12px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 12px;
+  text-shadow: 0 1px 0 #fff;
+  color: #000;
+  background: url(~Assets/btn-sprite.gif) 0 -175px no-repeat;
+  margin-right: 4px;
+}
+
+.btn: hover {
+  border: 1px solid #555;
+}
+
+.btn.processing, .btn.draft {
+  background-position: 0 0;
+}
+
+.btn.awaiting-stock, .btn.approve {
+  background-position: 0 -25px;
+}
+
+.btn.dispatched, .btn.publish {
+  background-position: 0 -50px;
+}
+
+.btn.add-image {
+  background-position: 0 -75px;
+}
+
+.btn.new {
+  background-position: 0 -100px;
+}
+
+.btn.save	{
+  background-position: 0 -125px;
+}
+
+.btn.delete	{
+  background-position: 0 -150px;
+}
+
+.gridTable {
+  border-collapse: collapse;
+  width: 950px;
+  margin: 10px 0;
+  border-bottom: 1px solid #dedede;
+}
+
+.gridTable th	{
+  text-align: left;
+  padding: 7px 5px;
+  border-bottom: 1px solid #dedede;
+}
+
+.gridTable th a	{
+  color: #000000;
+}
+
+.gridTable td	{
+  text-align: left;
+  padding: 7px 5px;
+  border-bottom: 1px solid #efefef;
+}
+
+.gridTable .alt td {
+  background-color: #f9f9f9;
+}
+
+.gridTable td.cb {
+  width: 30px;
+}
+
+.gridTable td.links	{
+  text-align: right;
+}
+
+.gridTable td a	{
+  float: left;
+  display: block;
+}
+.gridTable td span {
+  float: left;
+  display: block;
+}
+
+.gridTable td .a-status	{
+  float: left;
+  display: block;
+  width: 17px;
+  height: 17px;
+  margin: 0 4px 0 6px;
+  background: url(~Assets/sprites.png) -48px 0 no-repeat;
+}
+
+.gridTable td .a-status img	{
+  margin-left: 3px;
+}
+
+.gridTableControls {
+  border-collapse: collapse;
+  width: 950px;
+}
+
+.gridTableControls td	{
+  text-align: left;
+}
+
+.gridTableControls td td {
+  padding: 5px 8px 5px 0;
+}
+
+.gridTableControls td .right-btn {
+  border-left: 1px solid #eee;
+  padding-left: 14px;
+}
+
+.gridTableControls td.viewNum	{
+  text-align: right;
+}
+
+.gridTableControls td.buttons	{
+  padding-bottom: 10px;
+}
+
+.gridTableControls .active {
+  font-weight: bold;
+  color: black;
+}
+
+.pages {
+  font-size: 13px;
+  color: #333;
+}
+
+.pages .previous {
+  padding-left:22px;
+  height: 15px;
+  padding-top: 2px;
+  background: url(~Assets/sprites.png) -65px 0 no-repeat;
+}
+
+.pages .next {
+  padding-right: 22px;
+  height: 15px;
+  padding-top: 2px;
+  background: url(~Assets/sprites.png) 100% 0 no-repeat;
+}
+
+.pages span.previous {
+  background: none;
+}
+
+.pages span.next {
+  background: none;
+}
+
+.pages .page-numbers {
+  display: inline;
+  margin: 0 4px;
+  border-left: 1px solid #e2e2e2;
+}
+
+.pages .page-numbers a {
+  font-weight: bold;
+  padding: 0 4px;
+  border-right: 1px solid #e2e2e2;
+}
+
+.pages .page-numbers .dots {
+  font-weight: bold;
+  padding: 0 4px;
+  border-right: 1px solid #e2e2e2;
+}
+
+.pages .page-numbers a.active {
+  font-size: 16px;
+  position: relative;
+  top: 1px;
+  height: 17px;
+  overflow: hidden;
+}
+
+.tabs {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs li {
+  float: left;
+  list-style: none;
+  border: 0;
+  padding: 0;
+  border: 2px solid #f2f2f2;
+  border-bottom: 0;
+}
+
+.tabs li a {
+  display: block;
+  padding: 6px 10px;
+  border: 1px solid #dedede;
+  border-bottom: 0;
+  font-weight: bold;
+  color: #444;
+}
+
+.tabs li .on {
+  border: 1px solid #40b7c8;
+  border-bottom: 0;
+  background: #40b7c8;
+  color: #fff;
+}
+
+.editframe {
+  background: #f7f7f7;
+  width: 600px;
+  border: 1px solid #dedede;
+  padding: 10px;
+}
+
+.editframe h2 {
+  margin-top: 0px;
+}
+
+textarea {
+  height: 100px;
+  width: 350px;
+}
+
+.edit-page-table td {
+  padding: 0;
+}
+
+.rh-column {
+  padding-left: 20px;
+  width: 300px;
+}
+
+.rh-column img {
+  margin-right: 5px;
+}
+
+.fieldError {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.detailsTable {
+  width: 550px;
+}
+
+.detailsTable th, .detailsTable td	{
+  vertical-align: top;
+  padding: 7px 0;
+}
+
+.detailsTable th {
+  width: 190px;
+  font-weight: bold;
+  color: #555;
+  font-size: 13px;
+}
+
+.detailsTable input {
+  padding: 5px;
+  width: 240px;
+  border: 1px solid #999;
+  font-size: 13px;
+  font-weight: normal;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", arial, sans-serif;
+  color: #000;
+}
+
+.detailsTable textarea {
+  padding: 5px;
+  border: 1px solid #999;
+  font-size: 13px;
+  font-weight: normal;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", arial, sans-serif;
+  color: #000;
+}
+
+.detailsTable select {
+  width: 252px;
+  padding: 3px;
+  font-size: 13px;
+  font-weight: normal;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", arial, sans-serif;
+  color: #000;
+}
+
+.itemsTable {
+  width: 550px;
+}
+
+.itemsTable th, .itemsTable td	{
+  vertical-align: top;
+  padding: 3px 0;
+}
+
+.itemsTable th {
+  font-weight: bold;
+  color: #555;
+  font-size: 13px;
+}
+
+.itemsTable td.total {
+  font-weight: bold;
+  text-align: right;
+  color: #555;
+  padding-right: 5px;
+}
+
+.small {
+  font-size: 10px
+}
